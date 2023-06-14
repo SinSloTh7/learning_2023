@@ -2,14 +2,14 @@
 
 int bit_operations(int num, int oper_type) {
     switch (oper_type) {
-        case 1: // Set 1st bit
-            num |= 1; // OR operation with 000...0001
+        case 1: 
+            num |= 1; 
             break;
         case 2: // Clear 31st bit
-            num &= ~(1 << 31); // AND operation with 011...1110
+            num &= ~(1 << 31); 
             break;
-        case 3: // Toggle 16th bit
-            num ^= (1 << 16); // XOR operation with 000...0001 shifted to the 16th position
+        case 3: 
+            num ^= (1 << 16); 
             break;
         default:
             printf("Invalid operation type.\n");
